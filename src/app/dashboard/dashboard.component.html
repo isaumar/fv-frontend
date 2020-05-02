@@ -1,0 +1,8 @@
+<ng-container [ngSwitch]="currentUser.role">
+  <ng-container *ngSwitchCase="'VENDOR'">
+    <app-vendor-dashboard></app-vendor-dashboard>
+  </ng-container>
+  <ng-container *ngSwitchCase="'DEVELOPER'">
+    <app-dev-dashboard></app-dev-dashboard>
+  </ng-container>
+</ng-container>

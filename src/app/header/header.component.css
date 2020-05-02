@@ -1,0 +1,6 @@
+.header-sticky ul li a {
+  padding: 10px 19px;
+}
+.header-sticky.sticky-bar.sticky .header-btn .get-btn {
+  padding: 20px 20px;
+}

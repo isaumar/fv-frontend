@@ -1,0 +1,18 @@
+<mat-toolbar color="primary" class="bg-purple-8">
+  <span class="cursor-pointer" routerLink="/dashboard">  FOODY  </span>
+  <span class="example-spacer"></span>
+  <span class="cursor-pointer" routerLink="/cart"><mat-icon [matBadge] = "cartCount()" matBadgeColor="accent">shopping_cart</mat-icon></span>
+  <span class="padding-left"><p></p></span>
+  <span [matMenuTriggerFor]="menu" class="cursor-pointer"> <mat-icon>settings</mat-icon></span>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>dev@gmail.com</button>
+
+    <button
+      mat-menu-item
+      routerLink="new-administrator"
+    >Add Administrator
+    </button>
+    <button mat-menu-item (click)="logout()">Logout</button>
+  </mat-menu>
+</mat-toolbar>

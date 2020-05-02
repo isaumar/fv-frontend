@@ -1,0 +1,84 @@
+/*gfh*/
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/*@import "./assets/css/base.css";*/
+/*@import "./assets/css/quasar.mat.css";*/
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.example-form {
+  min-width: 150px;
+  max-width: 400px;
+  width: 100%;
+  padding: 10%;
+}
+
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+.example-card {
+  max-width: 400px;
+  margin: 20px 20px;
+}
+.cart-card {
+  margin: 5px 5px;
+
+}
+.card-btm-gutter{
+  margin-bottom: 20px ;
+}
+.card-gutter {
+  padding: 20px 10px 20px 10px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.full-view{
+  height: 100vh;
+}
+.full-side-nav{
+  height: 100%;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+table {
+  width: 100%;
+}
+.padding-left {
+  padding-left: 20px;
+}
+.button-padding{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.table-container {
+  height: 400px;
+  overflow: auto;
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+.cursor-inherit {
+  cursor: inherit !important;
+}
+
+.header-sticky ul li a {
+  padding: 10px 19px;
+}
+.header-sticky.sticky-bar.sticky .header-btn .get-btn {
+  padding: 20px 20px;
+}
+
+

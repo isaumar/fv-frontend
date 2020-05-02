@@ -1,0 +1,37 @@
+<mat-grid-list cols="1" rowHeight="1:1.2">
+    <mat-divider></mat-divider>
+  <h1>{{cartTotal | currency: "NGN": "₦"}}</h1>
+    <mat-vertical-stepper #stepper>
+      <form>
+      <mat-step>
+        <ng-template matStepLabel>Select payment method</ng-template>
+          <mat-radio-group aria-label="Select an option"
+                           [(ngModel)]="inputs.paymentMethod"
+                           matInput
+                            name="paymentMethod">
+            <mat-radio-button value="CASH">Pay on Delivery</mat-radio-button>
+            <span class="padding-left"></span>
+            <mat-radio-button value="CARD">Card</mat-radio-button>
+          </mat-radio-group>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Select delivery method</ng-template>
+        <mat-radio-group aria-label="Select an option"
+                         [(ngModel)]="inputs.deliveryMode"
+                         matInput
+                         name="deliveryMode">
+          <mat-radio-button value="PICKUP">Pickup</mat-radio-button>
+          <span class="padding-left"></span>
+          <mat-radio-button value="DELIVERY">Delivery</mat-radio-button>
+        </mat-radio-group>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Place Order</ng-template>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button (click)="submit()">Order</button>
+        </div>
+      </mat-step>
+      </form>
+    </mat-vertical-stepper>
+</mat-grid-list>
